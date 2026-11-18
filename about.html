@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lost and Found Portal - About us Page</title>
+
+<!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+<style>
+
+        /* ================= BODY ================= */
+
+        body {
+            background: linear-gradient(135deg, #f0f4f8, #e9ecef);
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+
+
+        /* ================= ABOUT US SECTION ================= */
+
+        .about-us-section {
+            padding: 60px 0;
+            position: relative;
+            perspective: 1000px;
+            background: url(abouts.png) no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            overflow: hidden;
+        }
+
+
+        /* About Us Heading */
+
+        .about-us-header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #f8f9fa;
+            transition: transform 0.3s ease, color 0.3s ease;
+            font-size: 2.5rem;
+        }
+
+        .about-us-header:hover {
+            color: #007bff;
+            transform: rotateY(0);
+        }
+
+
+        /* About Us Content */
+
+        .about-us-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+        }
+
+
+        /* About Us Card */
+
+        .about-us-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 80%;
+            max-width: 800px;
+            transform: rotateY(10deg);
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .about-us-card:hover {
+            transform: scale(1.05) rotateY(0);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+
+        /* About Us Image */
+
+        .about-us-img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            animation: fadin 1s ease-in-out;
+        }
+
+
+        /* About Us Text */
+
+        .about-us-text {
+            font-size: 1.1rem;
+            color: #343a40;
+            line-height: 1.6;
+        }
+
+
+        /* ================= FADE ANIMATION ================= */
+
+        @keyframes fadin {
+
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+
+        }
+
+
+        /* ================= QUOTE SECTION ================= */
+
+        .quote-section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+            color: #f8f9fa;
+            transform: rotateY(-10deg);
+            transition: transform 0.3s ease;
+        }
+
+        .quote-section:hover {
+            transform: rotateY(0);
+        }
+
+        .quote-section p {
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        .quote-section h4 {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #ffc107;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        .advanced-footer {
+            background: #343a40;
+            color: #fff;
+        }
+
+        .advanced-footer h5 {
+            margin-bottom: 15px;
+        }
+
+        .advanced-footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .advanced-footer a:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons li {
+            list-style: none;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 768px) {
+
+            .about-us-card {
+                width: 90%;
+            }
+
+            .about-us-header {
+                font-size: 2rem;
+            }
+
+            .quote-section p {
+                font-size: 1.1rem;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+  <div id="site-nav"></div>
+
+
+
+    <!-- ================= NAVIGATION BAR ================= -->
+
+    
+
+
+
+    <!-- ================= ABOUT US SECTION ================= -->
+
+    <section id="about-us-page"
+        class="about-us-section">
+
+
+        <div class="wrap">
+
+
+            <!-- Heading -->
+
+            <h2 class="about-us-header">
+                About Us
+            </h2>
+
+
+            <div class="about-us-content">
+
+
+                <!-- About Card -->
+
+                <div class="about-us-card">
+
+
+                    <!-- Image -->
+
+                    <img
+                        src="/abouts.png"
+                        alt="About Us Image"
+                        class="about-us-img">
+
+
+                    <!-- Text -->
+
+                    <div class="about-us-text">
+
+
+                        <p>
+                            Welcome to the Lost and Found Portal,
+                            where technology meets convenience.
+
+                            Our portal is designed to simplify
+                            the process of finding lost items
+                            and ensuring that they are returned
+                            to their rightful owners.
+
+                            We understand the frustration of
+                            losing a valuable item, and our mission
+                            is to provide a fast, easy, and secure
+                            platform to address these issues.
+                        </p>
+
+
+                        <p>
+                            Traditional methods of reporting and
+                            recovering lost items can be slow and
+                            cumbersome.
+
+                            Our system leverages modern technology
+                            to streamline the process, making it
+                            more efficient and user-friendly.
+
+                            With our portal, you can easily report
+                            lost items, search for found items,
+                            and get real-time updates on your claims.
+                        </p>
+
+
+                        <p>
+                            Our team is dedicated to continuously
+                            improving the portal based on user
+                            feedback and technological advancements.
+
+                            We are committed to providing the best
+                            service possible to ensure a seamless
+                            experience for all our users.
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Quote Section -->
+
+                <div class="quote-section">
+
+                    <p>
+                        Our goal is to make the process of finding
+                        lost items as smooth and efficient as possible.
+
+                        Technology is our ally in ensuring that
+                        no item is left behind.
+                    </p>
+
+                    <h4>
+                        The Lost and Found Team
+                    </h4>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= VALUES & STATS ================= -->
+    <section class="about-extra">
+        <h2>What we stand for</h2>
+        <div class="val-grid">
+            <div class="val-card"><i class="fas fa-bolt"></i><h5>Fast</h5><p class="muted bottom-0">Report, search and claim in minutes instead of queueing at an office.</p></div>
+            <div class="val-card"><i class="fas fa-shield-alt"></i><h5>Verified</h5><p class="muted bottom-0">Every claim is checked by an admin against the found item before it is returned.</p></div>
+            <div class="val-card"><i class="fas fa-hands-helping"></i><h5>Community</h5><p class="muted bottom-0">Finders and owners help each other. Honesty keeps the portal useful.</p></div>
+        </div>
+        <div class="stat-band">
+            <div><b data-stat="found">0</b>Items listed</div>
+            <div><b data-stat="returned">0</b>Returned to owners</div>
+            <div><b data-stat="claims">0</b>Claims filed</div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="center-text pad-y advanced-footer">
+
+        <div class="wrap">
+
+            <div class="cols">
+
+
+                <!-- Contact Us -->
+
+                <div class="col-third">
+
+                    <h5>
+                        Contact us
+                    </h5>
+
+                    <ul class="no-list">
+
+                        <li>
+
+                            <a href="mailto:infolost@gmail.com">
+
+                                <i class="fas fa-envelope"></i>
+
+                                infolost@gmail.com
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="tel:+9639476796">
+
+                                <i class="fas fa-phone"></i>
+
+                                +963 947 6796
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+                    <a href="#"
+                        class="white-text right-s">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                        class="white-text right-s">
+
+                        <i class="fab fa-twitter"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                        class="white-text">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Quick Links -->
+
+                <div class="col-third">
+
+                    <h5>
+                        Quick Links
+                    </h5>
+
+                    <ul class="no-list">
+
+                        <li>
+
+                            <a href="about.html">
+
+                                <i class="fas fa-info-circle"></i>
+
+                                About us
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="found.html">
+
+                                <i class="fas fa-list"></i>
+
+                                Found Items
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="found.html">
+
+                                <i class="fas fa-search"></i>
+
+                                Search
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Follow Us -->
+
+                <div class="col-third">
+
+                    <h5>
+                        Follow us
+                    </h5>
+
+
+                    <ul class="no-list social-icons">
+
+                        <li>
+
+                            <a href="#">
+
+                                <i class="fab fa-facebook-f"></i>
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="#">
+
+                                <i class="fab fa-instagram"></i>
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="#">
+
+                                <i class="fab fa-linkedin-in"></i>
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+
+                    <!-- Newsletter -->
+
+                    <div class="newsletter top-l">
+
+                        <h5>
+                            Subscribe to our Newsletter
+                        </h5>
+
+
+                        <form id="NewsletterForm">
+
+                            <div class="search-row">
+
+                                <input
+                                    type="email"
+                                    class="input"
+                                    placeholder="Enter your email"
+                                    required>
+
+
+                                <div class="search-row-btn">
+
+                                    <button
+                                        class="btn btn-blue"
+                                        type="submit">
+
+                                        Subscribe
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Copyright -->
+
+            <p class="top-l bottom-0">
+
+                Copyright © 2024 Lost and Found Portal.
+                All rights reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

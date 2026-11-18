@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lost and Found Portal - Claim Page</title>
+
+<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+<!-- Custom CSS -->
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .navbar-brand img {
+            position: relative;
+        }
+
+        .claim-section {
+            position: relative;
+            padding: 60px 0;
+        }
+
+        .claim-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .claim-section .wrap {
+            position: relative;
+            z-index: 1;
+        }
+
+        .claim-section .big-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #f9f9fa;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: color-change 5s infinite alternate;
+        }
+
+        .claim-section .intro {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #ddd;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes color-change {
+            0% { color: #f8f9fa; }
+            25% { color: #8bdcff; }
+            50% { color: #ffffff; }
+            75% { color: #8bdcff; }
+            100% { color: #f8f9fa; }
+        }
+    </style>
+</head>
+
+<body>
+
+  <div id="site-nav"></div>
+
+
+    <!-- NAVIGATION BAR -->
+    
+
+    <!-- REGISTRATION MODAL -->
+    
+
+    <!-- CLAIM SECTION -->
+    <section class="claim-section">
+        <div class="wrap">
+            <h1 class="big-title center-text">Claim Missing Item</h1>
+            <p class="intro center-text">
+                Help us return your missing item. Please provide the details below to claim your item.
+            </p>
+
+            <div class="how-claim">
+                <div><b>1</b><br>Find your item on the <a href="found.html" style="color:#8bdcff">Found Items</a> page</div>
+                <div><b>2</b><br>Submit proof it is yours</div>
+                <div><b>3</b><br>Admin matches &amp; verifies</div>
+                <div><b>4</b><br>Collect it from the Security Office</div>
+            </div>
+
+            <div class="cols">
+                <div class="col-half center-box">
+                    <div class="claim-card pad bottom-xl">
+                        <form id="claimItemForm">
+                            <div class="field">
+                                <label for="claimantName">
+                                    <i class="fas fa-user"></i> Your Name
+                                </label>
+                                <input type="text" class="input" id="claimantName" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="claimant-mail">
+                                    <i class="fas fa-envelope"></i> Your Email
+                                </label>
+                                <input type="email" class="input" id="claimant-mail" placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="claimant-Itemname">
+                                    <i class="fas fa-tag"></i> Item Name
+                                </label>
+                                <input type="text" class="input" id="claimant-Itemname" placeholder="Enter the item name" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="ClaimItemDesc">
+                                    <i class="fas fa-align-left"></i> Item Description
+                                </label>
+                                <textarea id="ClaimItemDesc" class="input" rows="3" placeholder="Enter the item description" required></textarea>
+                            </div>
+
+                            <div class="field">
+                                <label for="claimant-ItemLocation">
+                                    <i class="fas fa-map-marker-alt"></i> Last seen Location
+                                </label>
+                                <input type="text" class="input" id="claimant-ItemLocation" placeholder="Enter Last location" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-blue btn-full">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="center-text pad-y advanced-footer">
+        <div class="wrap">
+            <div class="cols">
+                <div class="col-third">
+                    <h5>Contact us</h5>
+                    <ul class="no-list">
+                        <li>
+                            <a href="mailto:infolost@gmail.com">
+                                <i class="fas fa-envelope"></i> infolost@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+9639476796">
+                                <i class="fas fa-phone"></i> +963 947 6796
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="white-text right-s"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="white-text right-s"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="white-text"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <div class="col-third">
+                    <h5>Quick Links</h5>
+                    <ul class="no-list">
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About us</a></li>
+                        <li><a href="found.html"><i class="fas fa-list"></i> Found Items</a></li>
+                        <li><a href="lost.html"><i class="fas fa-search-location"></i> Lost Reports</a></li>
+                        <li><a href="found.html"><i class="fas fa-search"></i> Search</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-third">
+                    <h5>Follow us</h5>
+                    <ul class="no-list social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+
+                    <div class="newsletter top-l">
+                        <h5>Subscribe to our Newsletter</h5>
+                        <form id="NewsletterForm">
+                            <div class="search-row">
+                                <input type="email" class="input" placeholder="Enter your email" required>
+                                <div class="search-row-btn">
+                                    <button class="btn btn-blue" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <p class="top-l bottom-0">Copyright © 2024 Lost and Found Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

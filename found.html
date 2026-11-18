@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost and Found Portal - Found Items</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>body{background:#f1f4f8;font-family:Arial,sans-serif}</style>
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+  <!-- Hero -->
+  <header class="found-hero" id="foundTop">
+    <h1><i class="fas fa-box-open"></i> Found Items</h1>
+    <p class="intro">Somebody found something? Somebody lost something? Search the list below or post an item you found.</p>
+    <div class="hero-stats">
+      <div class="stat"><b data-stat="found">0</b><small>Total listed</small></div>
+      <div class="stat"><b data-stat="available">0</b><small>Waiting for owner</small></div>
+      <div class="stat"><b data-stat="returned">0</b><small>Returned</small></div>
+    </div>
+  </header>
+
+  <main class="found-wrap">
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <div class="toolbar-row">
+        <div class="search-box"><i class="fas fa-search"></i><input id="fSearch" type="search" placeholder="Search by name, place or description…" aria-label="Search found items"></div>
+        <select id="fSort" aria-label="Sort items">
+          <option value="new">Newest first</option>
+          <option value="old">Oldest first</option>
+          <option value="az">Name A–Z</option>
+        </select>
+        <label class="switch bottom-0"><input type="checkbox" id="fAvail"> Available only</label>
+        <button class="btn btn-small btn-line" id="fReset" style="display:none"><i class="fas fa-undo"></i> Reset</button>
+        <button class="btn btn-blue" id="goReport"><i class="fas fa-plus"></i> I found something</button>
+      </div>
+      <div class="chips" id="fChips"></div>
+    </div>
+
+    <div class="result-info"><strong id="fCount" aria-live="polite"></strong></div>
+    <div class="found-grid" id="foundGrid"></div>
+
+    <!-- Report a found item -->
+    <section class="report-section" id="report">
+      <h2><i class="fas fa-hand-holding-heart"></i> Report a Found Item</h2>
+      <p class="muted">Add the details below and the owner will be able to find and claim it. Please do not post private details (full ID numbers, passwords).</p>
+      <form id="reportForm" class="lf-form" novalidate>
+        <div class="cols">
+          <div class="col-half field"><label for="rTitle">Item name *</label><input id="rTitle" class="input" maxlength="60" placeholder="e.g. Black wallet"></div>
+          <div class="col-half field"><label for="rCat">Category *</label><select id="rCat" class="input"></select></div>
+          <div class="col-half field"><label for="rLoc">Where did you find it? *</label><input id="rLoc" class="input" maxlength="80" placeholder="e.g. Main Library, 2nd floor"></div>
+          <div class="col-half field"><label for="rDate">Date found *</label><input id="rDate" type="date" class="input"></div>
+        </div>
+        <div class="field"><label for="rDesc">Description *</label><textarea id="rDesc" class="input" rows="3" maxlength="300" placeholder="Colour, brand, condition, anything that helps the owner recognise it"></textarea><small id="rCount" class="muted right">0 / 300</small></div>
+        <div class="field">
+          <label>Photo (optional)</label>
+          <div class="drop" id="drop" tabindex="0" role="button" aria-label="Upload photo"><i class="fas fa-cloud-upload-alt fa-2x"></i><br>Click or drag &amp; drop a photo here</div>
+          <input type="file" id="rPhoto" accept="image/*" hidden>
+          <div class="preview" id="preview"><img alt="Preview"><button type="button" aria-label="Remove photo">&times;</button></div>
+        </div>
+        <div class="cols">
+          <div class="col-half field"><label for="rName">Your name *</label><input id="rName" class="input" autocomplete="name"></div>
+          <div class="col-half field"><label for="rEmail">Your email *</label><input id="rEmail" type="email" class="input" autocomplete="email"></div>
+        </div>
+        <button type="submit" class="btn btn-blue btn-big"><i class="fas fa-paper-plane"></i> Post Found Item</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="center-text pad-y advanced-footer">
+    <div class="wrap">
+      <div class="cols">
+        <div class="col-third">
+          <h5>Contact us</h5>
+          <ul class="no-list">
+            <li><a href="mailto:infolost@gmail.com"><i class="fas fa-envelope"></i> infolost@gmail.com</a></li>
+            <li><a href="tel:+9639476796"><i class="fas fa-phone"></i> +963 947 6796</a></li>
+          </ul>
+        </div>
+        <div class="col-third">
+          <h5>Quick Links</h5>
+          <ul class="no-list">
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About us</a></li>
+            <li><a href="found.html"><i class="fas fa-list"></i> Found Items</a></li>
+            <li><a href="lost.html"><i class="fas fa-search-location"></i> Lost Reports</a></li>
+            <li><a href="claim.html"><i class="fas fa-hand-pointer"></i> Claim Missing</a></li>
+          </ul>
+        </div>
+        <div class="col-third">
+          <h5>Subscribe to our Newsletter</h5>
+          <form id="NewsletterForm">
+            <div class="search-row">
+              <input type="email" class="input" placeholder="Enter your email" required>
+              <div class="search-row-btn"><button class="btn btn-blue" type="submit">Subscribe</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <p class="top-l bottom-0">Copyright © 2024 Lost and Found Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="found.js"></script>
+</body>
+</html>

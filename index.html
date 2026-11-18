@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost and Found Portal - Home page</title>
+  
+  <!-- Font Awesome & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+<!-- Custom CSS -->
+</head>
+<body>
+
+  <div id="site-nav"></div>
+
+
+  <!-- Navigation Bar -->
+  
+
+  <!-- Pure CSS Registration Modal -->
+  
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <h1>Welcome to the Lost and Found Portal</h1>
+    <p>Your easy solution for finding lost belongings.</p>
+    <div class="hero-stats">
+      <div class="stat"><b data-stat="found">0</b><small>Items listed</small></div>
+      <div class="stat"><b data-stat="available">0</b><small>Waiting for owner</small></div>
+      <div class="stat"><b data-stat="returned">0</b><small>Returned</small></div>
+    </div>
+    <a href="found.html" class="btn btn-light top-l"><i class="fas fa-box-open"></i> Browse Found Items</a>
+    <a href="lost.html#report" class="btn btn-red top-l left-s"><i class="fas fa-bullhorn"></i> Report a Lost Item</a>
+  </header>
+
+  <!-- Search Bar Section -->
+  <section class="search-bar-section">
+    <div class="wrap">
+      <h2>Search for your lost Item</h2>
+      <div class="search-bar">
+        <input type="text" id="searchinput" placeholder="Enter item name...">
+        <button class="btn btn-blue" id="searchButton">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <main class="wrap">
+    <section id="about-us">
+      <h2 class="animated-header">About Us</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Traditionally, finding lost belongings was a tough and time‑consuming task. With changing technology, every process needs to be more technical and easier to use, saving time and effort for those in need. Office staff used to rely on pen and paper, with several layers of substantiation, which not only slowed down the process but also allowed for potential misuse of power.</p>
+          <p>This portal has been developed to tackle these major issues along with other minor problems. The development of this new system contains activities aimed at developing an online application with a database integration approach. Users get their user ID and password to access their accounts. The database system administrator has multiple features such as adding, deleting, and updating information.</p>
+          <p>The major aim of this project is to provide a fast, easy, secure, and optimized platform for people in need of our company's facilities and services. The traditional methods were time-consuming and physically tiring. This project aims to help people use our company's portal with ease from home.</p>
+        </div>
+        <div class="about-image">
+          <img src="home bg.png" alt="Lost and Found" class="animated-image">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Categories Section -->
+  <section id="categories" class="wrap">
+    <h2 class="animated-header">Categories</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="Electronic.png" alt="Electronics">
+        <h3>Electronics</h3>
+        <p>Find your lost electronic gadgets like mobile phones, laptops, cameras, etc.</p>
+      </div>
+      <div class="category-card">
+        <img src="2.png" alt="Accessories">
+        <h3>Accessories</h3>
+        <p>Lost your accessories? Search for watches, jewellery, glasses and more.</p>
+      </div>
+      <div class="category-card">
+        <img src="Documents.png" alt="Documents">
+        <h3>Documents</h3>
+        <p>Retrieve your important documents such as ID Cards, Passports, and Certificates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="wrap">
+    <h2 class="animated-header">How It Works</h2>
+    <div class="how-it-works-grid">
+      <div class="how-it-works-card">
+        <div class="how-it-works-icon"><i class="fas fa-search"></i></div>
+        <h3>Step 1: Report</h3>
+        <p>User reports a lost item using the portal's interface.</p>
+      </div>
+      <div class="how-it-works-card">
+        <div class="how-it-works-icon"><i class="fas fa-database"></i></div>
+        <h3>Step 2: Database Entry</h3>
+        <p>The item details are stored in the database securely.</p>
+      </div>
+      <div class="how-it-works-card">
+        <div class="how-it-works-icon"><i class="fas fa-search-location"></i></div>
+        <h3>Step 3: Search</h3>
+        <p>User can search for their lost items using various filters.</p>
+      </div>
+      <div class="how-it-works-card">
+        <div class="how-it-works-icon"><i class="fas fa-check"></i></div>
+        <h3>Step 4: Verification</h3>
+        <p>Admin verifies the claim and matches it with found item.</p>
+      </div>
+      <div class="how-it-works-card">
+        <div class="how-it-works-icon"><i class="fas fa-handshake"></i></div>
+        <h3>Step 5: Return</h3>
+        <p>Verified items are returned to their rightful owners.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Found Items -->
+  <section id="latest-found" class="wrap">
+    <h2 class="animated-header">Recently Found Items</h2>
+    <div class="mini-grid" id="latestFound"></div>
+    <p class="center-text"><a href="found.html" class="btn btn-blue">View all found items</a></p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="wrap">
+    <h2 class="animated-header">Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item"><button class="faq-q">I found something. What should I do? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Open the Found Items page, press “I found something” and fill the short form. A photo helps the owner recognise it.</div></div>
+      <div class="faq-item"><button class="faq-q">How do I claim my item? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Find it on the Found Items page and press “Claim”. Describe something only the owner would know. The admin team verifies the claim before returning the item.</div></div>
+      <div class="faq-item"><button class="faq-q">Is the service free? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Yes. Reporting, searching and claiming items on the portal is free for everyone.</div></div>
+      <div class="faq-item"><button class="faq-q">Can I cancel a claim? <i class="fas fa-chevron-down"></i></button><div class="faq-a">Yes. Go to the Claim Missing page and use “Cancel claim” under My Claims.</div></div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="wrap">
+    <h2 class="animated-header">What Our Users Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-icon"><i class="fas fa-quote-left"></i></div>
+        <p>"This portal made it so easy to find my lost wallet. The process was smooth and the notifications were timely. Highly recommend!"</p>
+        <h5>John Doe</h5>
+        <small>Verified User</small>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-icon"><i class="fas fa-quote-left"></i></div>
+        <p>"I Found a lost phone and the system helped me connect with the owner quickly. Great job on making this easy and efficient!"</p>
+        <h5>Jane Smith</h5>
+        <small>Verified Finder</small>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-icon"><i class="fas fa-quote-left"></i></div>
+        <p>"The lost and found portal is a lifesaver! I was able to report my lost keys and get them back in no time. Thank you!"</p>
+        <h5>Emily Johnson</h5>
+        <small>Verified Finder</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Updates Section -->
+  <section id="latest-updates" class="wrap">
+    <h2 class="animated-header">Latest Updates</h2>
+    <div class="updates-grid">
+      <div class="update-card">
+        <div class="update-icon"><i class="fas fa-bell"></i></div>
+        <h3>New Feature Launch</h3>
+        <p>We have launched a new feature to enhance the user experience. Check it out now!</p>
+      </div>
+      <div class="update-card">
+        <div class="update-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Security Update</h3>
+        <p>We have updated our security measures to better protect your data. Your data is safe with us.</p>
+      </div>
+      <div class="update-card">
+        <div class="update-icon"><i class="fas fa-desktop"></i></div>
+        <h3>Improved UI</h3>
+        <p>Our user interface has been revamped for a more intuitive and seamless experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact-us" class="wrap">
+    <h2 class="animated-header">Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-details">
+        <h3>Get in Touch</h3>
+        <p>If you have any questions or need further assistance, please feel free to reach out to us through the following contact details.</p>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> 1234 Street</li>
+          <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+          <li><i class="fas fa-envelope"></i> support@example.com</li>
+        </ul>
+      </div>
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form id="contact-form">
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" class="input" placeholder="Enter your name">
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" class="input" placeholder="Enter your email">
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" class="input" rows="5" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-blue">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="advanced-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h5>Contact us</h5>
+          <ul class="no-list">
+            <li><a href="mailto:infolost@gmail.com"><i class="fas fa-envelope"></i> infolost@gmail.com</a></li>
+            <li><a href="tel:+9639476796"><i class="fas fa-phone"></i> +963 947 6796</a></li>
+          </ul>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <ul class="no-list">
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About us</a></li>
+            <li><a href="found.html"><i class="fas fa-list"></i> Found Items</a></li>
+            <li><a href="lost.html"><i class="fas fa-search-location"></i> Lost Reports</a></li>
+            <li><a href="found.html"><i class="fas fa-search"></i> Search</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Subscribe to our Newsletter</h5>
+          <form id="NewsletterForm" class="newsletter-form">
+            <input type="email" class="input" placeholder="Enter your email" required>
+            <button class="btn btn-blue" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024 Lost and Found Portal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
